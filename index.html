@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\css\styles.css">
+    <title>Rafael Bastos</title>
+</head>
+<body>
+    <header class="header-wrapper">
+        <div class="header">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu"></div>
+                    <nav class="menu-items">
+                        <ul>
+                            <li>
+                                <a href="#top" onclick="fecharMenu()">Home</a>
+                            </li>
+                            <li>
+                                <a href="#sobre" onclick="fecharMenu()">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#projetos" onclick="fecharMenu()">Projetos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <h1>Rafael Bastos</h1>
+        <h2>especializando-se em: <span class="typed"></h2>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/rafael-ferreira-bastos-62a558232/" target="_blank">Linkedin</a>
+            <a href="https://github.com/rafaelfbastos" target="_blank">Github</a>
+        </div>
+    </header>
+    <section id="sobre">
+        <div class="container">
+            <div class="card-container">
+               <div><img class="foto" src="./static/img/foto.jpg" alt=""></div>
+               <div class="card-text">
+                    <p>Estudante de ciências da computação da Universidade Jorge amado, 
+                        dedica-se seu tempo no aprendizado de novas linguagens de programação</p>
+                    <p>Sempre disposto aceitar novos desafios, atualmente aprimora-se no desenvolvimento Full-Stack</p>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="projetos">
+            <div class="card-container">
+               
+                <div class="card-text">
+                    <p>Projeto desenvolvido em Python usando o Framework Flask, com o intuito de ajudar estudantes 
+                        que cursam teoria dos números. Esse projeto serviu também como avalição do meu 1º semetre.
+                    </p>
+                    <a href="https://teoria-dos-numeros.herokuapp.com/" target="_blank">Visite.</a>
+               </div>
+               
+               <div class="card">
+                    <div class="card-wrapper">
+                        <h2>Teoria dos Números</h2>
+                        <p>Visite</p>
+                    </div>
+                </div>      
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-wrapper">
+                        <h2>Prova Escolhas Multiplas</h2>
+                        <p>Visite</p>
+                    </div>
+                </div>
+
+                <div class="card-text">
+                    <p>Projeto desenvolvido em Python usando o Framework Django, para auxiliar na correção de provas 
+                        de escolhas multiplas. 
+                    </p>
+                    <a href="https://prova-somatoria.herokuapp.com/" target="_blank">Visite.</a>
+               </div>
+            </div>
+    </div>
+
+    <footer class="footer">
+        Feito por Rafael Bastos 
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+
+            function fecharMenu(){
+                var checkbox = document.getElementById("toggle");
+                checkbox.checked = false;
+            }
+
+            var typed = new Typed('.typed', {
+            strings: ['Java', 'Js','Python', 'dart', 'react', 'spring','flutter'],
+            smartBackspace: true,
+            typeSpeed: 10,
+            startDelay: 5,
+            backSpeed: 5,
+            smartBackspace: true,
+            backDelay: 1000,
+            loop: true,
+            loopCount: Infinity,      
+            });
+    </script>
+</body>
+</html>
