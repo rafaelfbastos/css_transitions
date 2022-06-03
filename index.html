@@ -42,8 +42,8 @@
             <a href="https://github.com/rafaelfbastos" target="_blank">Github</a>
         </div>
     </header>
-    <section id="sobre">
-        <div class="container">
+    
+        <div class="container" id="sobre" >
             <div class="card-container">
                <div><img class="foto" src="./static/img/foto.jpg" alt=""></div>
                <div class="card-text">
@@ -53,7 +53,7 @@
                </div>
             </div>
         </div>
-    </section>
+ 
 
     <div class="container" id="projetos">
             <div class="card-container">
@@ -65,15 +65,15 @@
                     <a href="https://teoria-dos-numeros.herokuapp.com/" target="_blank">Visite.</a>
                </div>
                
-               <div class="card">
+               <div class="card"  onclick="redirect_teoria()">
                     <div class="card-wrapper">
-                        <h2>Teoria dos Números</h2>
+                        <h2 onclick="">Teoria dos Números</h2>
                         <p>Visite</p>
                     </div>
                 </div>      
             </div>
             <div class="card-container">
-                <div class="card">
+                <div class="card" onclick="redirect_soma()">
                     <div class="card-wrapper">
                         <h2>Prova Escolhas Multiplas</h2>
                         <p>Visite</p>
@@ -100,6 +100,14 @@
                 var checkbox = document.getElementById("toggle");
                 checkbox.checked = false;
             }
+
+            function redirect_teoria(){
+                window.location.href = "https://teoria-dos-numeros.herokuapp.com/";
+            }
+            function redirect_soma(){
+                window.location.href = "https://prova-somatoria.herokuapp.com/";
+            }
+
 
             var typed = new Typed('.typed', {
             strings: ['Java', 'Js','Python', 'dart', 'react', 'spring','flutter'],

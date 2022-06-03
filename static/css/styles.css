@@ -284,7 +284,7 @@ a:hover {
     transition: 0.3s;
 }
 
-.card-wrapper h2 {
+.card-wrapper h2{
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -306,8 +306,8 @@ a:hover {
 }
 
 .card:hover > .card-wrapper::before {
-    height: 250px;
-    width: 350px;
+    height: 280px;
+    width: 380px;
     opacity: 1;
 }
 
@@ -354,9 +354,10 @@ footer {
     }
 
     .card{
-        height: 250px;
-        height: 250px;
+        height: 350px;
+        height: 350px;
     }
+
     .card-text{
         width: 90%;
         margin-top: 2rem;
